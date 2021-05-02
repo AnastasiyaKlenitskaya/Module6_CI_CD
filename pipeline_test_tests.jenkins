@@ -2,13 +2,13 @@ pipeline {
    agent any
 
    stages {
-    stage('Build') {
+    stage('build') {
      steps {
         sh 'Test_Calculator.py'
     }
    }
 
-   stage('Build') {
+   stage('build') {
      steps {
         sh 'Test_Calculator_Negative.py'
      }
