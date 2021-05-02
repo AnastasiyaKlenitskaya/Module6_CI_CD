@@ -1,0 +1,17 @@
+pipeline {
+   agent any
+
+   stages {
+    stage('Build') {
+     steps {
+        sh 'Test_Calculator.py'
+    }
+   }
+
+   stage('Build') {
+     steps {
+        sh 'Test_Calculator_Negative.py'
+     }
+   }
+  }
+} 
