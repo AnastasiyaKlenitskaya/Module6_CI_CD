@@ -1,17 +1,11 @@
 pipeline {
    agent any
 
-   stages {
-    stage('build') {
-     steps {
-        sh 'Test_Calculator.py'
+    stages {
+        stage('build') {
+            steps {
+                sh 'Test_Calculator.py'
+            }
+        }
     }
-   }
-
-   stage('build') {
-     steps {
-        sh 'Test_Calculator_Negative.py'
-     }
-   }
-  }
-} 
+}
